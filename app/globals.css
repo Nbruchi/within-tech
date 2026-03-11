@@ -47,6 +47,12 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+@theme{
+  --color-app-orange: #FF3F00;
+  --color-app-purple: #350066;
+  --light-app-yellow: #FCE3B9;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -124,6 +130,38 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-inter;
   }
+}
+
+@utility section-title{
+  @apply text-4xl! font-semibold!;
+}
+
+@keyframes partners-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.partners-marquee {
+  display: flex;
+  width: max-content;
+  animation: partners-marquee 24s linear infinite;
+  will-change: transform;
+}
+
+.partners-marquee:hover {
+  animation-play-state: paused;
+}
+
+.partners-fade-left {
+  background: linear-gradient(to right, var(--background), transparent);
+}
+
+.partners-fade-right {
+  background: linear-gradient(to left, var(--background), transparent);
 }
