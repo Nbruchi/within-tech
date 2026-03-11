@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import {ReactNode} from "react";
 import {TooltipProvider} from "@/components/ui/tooltip";
 import {Toaster} from "@/components/ui/sonner";
+import Navbar from "@/components/layout/navbar";
 
 const inter = localFont({
     src: "./fonts/Inter-VF.ttf",
@@ -34,9 +35,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("font-sans", inter.variable)}>
       <body
-        className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
       >
       <TooltipProvider>
+          <Navbar/>
         {children}
           <Toaster/>
       </TooltipProvider>
