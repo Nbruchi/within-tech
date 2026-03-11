@@ -5,11 +5,11 @@ import WhoWeAre from "@/components/landing/who-we-are";
 
 const Page = () => {
     return (
-        <div>
+        <main>
             <Hero/>
             <Partners/>
             <WhoWeAre/>
-        </div>
+        </main>
     )
 }
 export default Page

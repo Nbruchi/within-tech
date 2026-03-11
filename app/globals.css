@@ -50,7 +50,7 @@
 @theme{
   --color-app-orange: #FF3F00;
   --color-app-purple: #350066;
-  --light-app-yellow: #FCE3B9;
+  --color-app-yellow: #FCE3B9;
 }
 
 :root {
@@ -128,9 +128,6 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-inter;
   }
 }
 
