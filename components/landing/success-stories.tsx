@@ -27,7 +27,7 @@ function SuccessStories() {
                             <VscSparkleFilled className="size-4 fill-app-orange"/>
                         </ItemMedia>
                         <ItemContent>
-                            <ItemTitle className="text-lg text-app-orange">Our Programs</ItemTitle>
+                            <ItemTitle className="text-lg text-app-orange">Succes Stories</ItemTitle>
                         </ItemContent>
                     </Item>
                     <h2 className="section-title text-app-purple">

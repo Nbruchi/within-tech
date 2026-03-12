@@ -126,6 +126,7 @@ const Footer = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="footer-link"
+                                        aria-label="Within Tech LinkedIn"
                                     >
                                        <FaLinkedin className="footer-link-icon"/>
                                     </Link>
@@ -136,6 +137,7 @@ const Footer = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="footer-link"
+                                        aria-label="Within Tech Twitter"
                                     >
                                         <FaXTwitter className="footer-link-icon"/>
                                     </Link>
@@ -146,6 +148,7 @@ const Footer = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="footer-link"
+                                        aria-label="Within Tech Facebook"
                                     >
                                        <FaFacebook className="footer-link-icon"/>
                                     </Link>
@@ -155,6 +158,7 @@ const Footer = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="footer-link"
+                                        aria-label="Within Tech Instagram"
                                     >
                                         <FaInstagram className="footer-link-icon" />
                                     </Link>

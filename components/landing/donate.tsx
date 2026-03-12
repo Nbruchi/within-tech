@@ -43,7 +43,7 @@ const Donate = () => {
                 <Button className="bg-app-orange hover:bg-app-orange/80 px-8 py-6 rounded-none">Donate</Button>
             </div>
            <div className="w-full flex-1">
-               <Image src="/images/cta.png" alt="cta" width={1000} height={1000} className="object-cover w-full" />
+               <Image src="/images/cta.png" alt="Donate" fill sizes="100vw" className="object-cover w-full" />
            </div>
         </section>
     )
