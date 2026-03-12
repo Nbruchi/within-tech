@@ -5,8 +5,8 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen pt-24 sm:pt-28">
-      <div className="absolute inset-0 -z-10 bg-[url('/images/landing.png')] bg-cover bg-center bg-no-repeat" />
-      <div className="absolute inset-0 -z-10 bg-black/35" />
+      <div className="absolute inset-0 -z-10 bg-[url('/images/landing.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 -z-10 bg-black/70" />
 
       <div className="px-4 py-16 sm:px-6 lg:px-6 flex flex-col items-center gap-2 mx-auto max-w-5xl">
           <Item variant="outline" className="rounded-full flex items-center gap-2 bg-white/10 px-4 py-2 w-fit">

@@ -1,17 +1,3 @@
-interface Program {
-    id: string;
-    title: string;
-    description: string;
-    banner: string;
-}
-
-interface Testimonial {
-    quote: string;
-    name: string;
-    image: string;
-}
-
-
 export const navLinks = [
     {
         id:"1",
@@ -72,37 +58,43 @@ export const programs:Program[] = [
         id:"1",
         title:"Get Into Tech Summer Camp",
         description:"An exciting summer program where students learn coding, robotics, design, and innovation while building real technology projects.",
-        banner: "/images/landing-pic-02.png"
+        banner: "/images/landing-pic-02.png",
+        href:"/programs/get-into-tech-summer-camp"
     },
     {
         id:"2",
         title:"Coding & Robotics Clubs",
         description: "Weekly school-based technology clubs that introduce students to programming, robotics, and problem-solving through hands-on projects.",
-        banner: "/images/landing-pic-03.png"
+        banner: "/images/landing-pic-03.jpeg",
+        href:"/programs/coding-and-robotics-club"
     },
     {
         id:"3",
         title:"Girls Get Into STEM",
         description: "A three-month program designed to support girls and young women in building confidence and skills in technology and innovation.",
-        banner: "/images/landing-pic-04.png"
+        banner: "/images/landing-pic-04.jpg",
+        href:"/programs/girls-get-into-stem"
     },
     {
         id:"4",
         title:"Get Into Space Tech (GIST)",
         description: "A program where learners explore space science, robotics, satellites, and engineering through practical projects.",
-        banner: "/images/landing-pic-05.png"
+        banner: "/images/landing-pic-01.jpeg",
+        href:"/programs/get-into-space-tech"
     },
     {
         id:"5",
         title:"Enjoy AI Competition",
         description: "An exciting challenge where young innovators build AI-powered solutions and compete while learning about artificial intelligence.",
-        banner: "/images/landing-pic-06.png"
+        banner: "/images/landing-pic-06.jpg",
+        href:"/programs/ejoy-ai-competition"
     },
     {
         id:"6",
         title:"Internship Program",
         description: "A practical learning opportunity where university students gain real-world experience by mentoring younger learners and working on technology projects.",
-        banner: "/images/landing-pic-01.png"
+        banner: "/images/landing-pic-05.jpg",
+        href:"/programs/internship-program"
     },
 ]
 
