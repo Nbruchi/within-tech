@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="mt-20 grid grid-cols-1 gap-8 md:grid-cols-3 md:items-start">
               <div className="overflow-hidden rounded-sm border-6 border-white/40">
                   <Image
-                      src="/images/landing-pic-01.png"
+                      src="/images/landing-pic-01.jpeg"
                       alt="Students learning together"
                       width={560}
                       height={700}
@@ -48,7 +48,7 @@ const Hero = () => {
 
               <div className="overflow-hidden rounded-sm border-6 border-white/40">
                   <Image
-                      src="/images/landing-pic-03.png"
+                      src="/images/landing-pic-03.jpeg"
                       alt="Technology activity session"
                       width={560}
                       height={700}
