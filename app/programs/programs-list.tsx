@@ -9,7 +9,7 @@ const ProgramsList = () => {
                     <VscSparkleFilled className="size-3 text-white"/>
                 </ItemMedia>
                 <ItemContent>
-                    <ItemTitle className="text-white">Some of our programs</ItemTitle>
+                    <ItemTitle className="text-white">Our programs</ItemTitle>
                 </ItemContent>
             </Item>
             <ul></ul>
