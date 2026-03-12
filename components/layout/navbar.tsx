@@ -107,7 +107,7 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <Button className="rounded-sm bg-app-purple px-6 py-4 hover:bg-app-purple/90">
+          <Button className="rounded-none bg-app-purple px-6 py-4 hover:bg-app-purple/90">
             Donate
           </Button>
 

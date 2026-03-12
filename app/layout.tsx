@@ -6,6 +6,7 @@ import {ReactNode} from "react";
 import {TooltipProvider} from "@/components/ui/tooltip";
 import {Toaster} from "@/components/ui/sonner";
 import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 const inter = localFont({
     src: "./fonts/Inter-VF.ttf",
@@ -40,6 +41,7 @@ export default function RootLayout({
       <TooltipProvider>
           <Navbar/>
         {children}
+          <Footer/>
           <Toaster/>
       </TooltipProvider>
       </body>

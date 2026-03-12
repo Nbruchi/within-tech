@@ -1,12 +1,11 @@
 import Image from "next/image";
 
 const partners = [
-    { name: "Cybex", src: "/icons/partner-cybex.png" },
-    { name: "Life Fitness", src: "/icons/partner-life-fitness.png" },
-    { name: "Octane Fitness", src: "/icons/partner-octane-fitness.png" },
-    { name: "Smile", src: "/icons/partner-smile.png" },
-    { name: "Travel", src: "/icons/partner-travel.png" },
-    { name: "True Fitness", src: "/icons/partner-true-fitness.png" },
+    { name: "RCA", src: "/icons/partner-rca.png" },
+    { name: "Digital Transformation Center Rwanda", src: "/icons/partner-dtc.png" },
+    { name: "German Corporation", src: "/icons/partner-giz.png" },
+    { name: "One Million Rwandan Coders", src: "/icons/partner-mrc.png" },
+    { name: "WhalesBot", src: "/icons/partner-whalesbot.png" },
 ];
 
 const loopedPartners = [...partners, ...partners];
