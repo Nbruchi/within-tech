@@ -1,3 +1,17 @@
+interface Program {
+    id: string;
+    title: string;
+    description: string;
+    banner: string;
+}
+
+interface Testimonial {
+    quote: string;
+    name: string;
+    image: string;
+}
+
+
 export const navLinks = [
     {
         id:"1",
@@ -53,7 +67,7 @@ export const navLinks = [
     }
 ]
 
-export const programs = [
+export const programs:Program[] = [
     {
         id:"1",
         title:"Get Into Tech Summer Camp",
@@ -92,7 +106,7 @@ export const programs = [
     },
 ]
 
-export const testimonials = [
+export const testimonials:Testimonial[] = [
     {
         quote: "WithinTech allowed me to write my first Hello World in coding. That moment changed everything for me. After attending their training, I gained the confidence and skills that helped me get a job.",
         name: "Teta Nancy",
