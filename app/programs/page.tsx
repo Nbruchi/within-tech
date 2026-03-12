@@ -1,5 +1,5 @@
 import Banner from "@/components/programs/banner";
-import ProgramsList from "@/app/programs/programs-list";
+import ProgramsList from "@/components/programs/programs-list";
 
 const ProgramsPage = () => {
     return (
