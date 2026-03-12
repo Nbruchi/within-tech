@@ -3,7 +3,7 @@ declare interface Program {
     title: string;
     description: string;
     banner: string;
-    href:string;
+    slug:string;
 }
 
 declare interface Testimonial {
