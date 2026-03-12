@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Item, ItemContent, ItemMedia, ItemTitle } from "@/components/ui/item";
-import { Sparkle } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -10,6 +9,7 @@ import "swiper/css/effect-cards";
 
 import { EffectCards } from "swiper/modules";
 import { Button } from "@/components/ui/button";
+import {VscSparkleFilled} from "react-icons/vsc";
 
 type ContentCard = {
     title: string;
@@ -57,9 +57,9 @@ const WhoWeAre = () => {
     return (
         <section id="who-we-are" className="grid gap-8 bg-app-purple px-4 py-12 text-white lg:grid-cols-2 lg:px-6">
             <div className="flex flex-col justify-center items-start">
-                <Item variant="outline" className="mt-10 flex w-fit items-center gap-2 rounded-full border-none bg-app-orange/10">
+                <Item variant="outline" className="mt-10 flex w-fit items-center gap-2 rounded-full border-none bg-app-orange/10 py-1 px-2">
                     <ItemMedia variant="icon">
-                        <Sparkle className="size-4 text-app-orange" />
+                        <VscSparkleFilled className="size-4 fill-app-orange" />
                     </ItemMedia>
                     <ItemContent>
                         <ItemTitle className="text-lg text-app-orange">Who We Are</ItemTitle>
@@ -109,13 +109,13 @@ const WhoWeAre = () => {
                 </div>
 
                 <div className="mt-10">
-                    <Button className="rounded-sm bg-app-orange px-10 py-6 text-lg hover:bg-app-orange/80">
+                    <Button className="rounded-none bg-app-orange px-10 py-6 text-lg hover:bg-app-orange/80">
                         Register now
                     </Button>
                 </div>
             </div>
 
-            <div className="relative min-h-105 overflow-hidden rounded-3xl">
+            <div className="relative min-h-110 overflow-hidden rounded-3xl">
                 <Image
                     src="/images/mission.png"
                     alt="People supporting each other on a climb"

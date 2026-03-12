@@ -1,5 +1,5 @@
 import {Item, ItemContent, ItemMedia, ItemTitle} from "@/components/ui/item";
-import {Sparkle} from "lucide-react";
+import {VscSparkleFilled} from "react-icons/vsc";
 import Image from "next/image";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="px-4 py-16 sm:px-6 lg:px-6 flex flex-col items-center gap-2 mx-auto max-w-5xl">
           <Item variant="outline" className="rounded-full flex items-center gap-2 bg-white/10 px-4 py-2 w-fit">
               <ItemMedia variant="icon">
-                  <Sparkle className="size-3 text-white"/>
+                  <VscSparkleFilled className="size-3 text-white"/>
               </ItemMedia>
               <ItemContent>
                   <ItemTitle className="text-white">Get-into-tech: Summer Camp 2026 | Coming soon</ItemTitle>
