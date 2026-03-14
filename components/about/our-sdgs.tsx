@@ -54,7 +54,7 @@ const OurSDGs = () => {
         },
         {
             number:8,
-            title:"INDUSTY, INNOVATION & INFRASTRUCTURE",
+            title:"INDUSTRY, INNOVATION & INFRASTRUCTURE",
             color:"#fd7217",
             icon:"/icons/sdg-8.svg",
             description:"Increase industry, innovation and infrastructure, including via fair and equitable sharing and value-added reforms and markets.",
@@ -82,6 +82,9 @@ const OurSDGs = () => {
                     {sdgs.map((sdg) => (
                         <div
                             key={sdg.number}
+                            tabIndex={0}
+                                                  role="button"
+                                                    aria-label={`${sdg.title}: ${sdg.description}`}
                             className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 aspect-square cursor-pointer
               "
                             style={{ backgroundColor: sdg.color }}
@@ -91,9 +94,7 @@ const OurSDGs = () => {
                                 <Image src={sdg.icon} alt={sdg.title} width={200} height={64} className="mb-2"/>
                             </div>
 
-                            {/* Hover overlay with description */}
-                            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 text-center
-              ">
+                            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300 p-6 text-center">
                                 <p className="text-white text-base md:text-lg font-medium leading-relaxed">
                                     {sdg.description}
                                 </p>

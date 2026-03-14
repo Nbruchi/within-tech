@@ -38,7 +38,7 @@ const ProgramDetails = ({slug}:{slug:string}) => {
             <EmpowerCta/>
             <OtherPrograms programs={otherPrograms}/>
             <div className="container py-12 text-center">
-                <Button variant="outline" size="lg" onClick={() => router.back()}>
+                <Button className="bg-app-purple hover:bg-app-purple/80 text-white rounded-none px-10 py-6 transition-all duration-200" onClick={() => router.push("/programs")}>
                     <ChevronLeft className="mr-2 h-5 w-5" /> Back to Programs
                 </Button>
             </div>
