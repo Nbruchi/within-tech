@@ -6,37 +6,31 @@ const CoreValues = () => {
             title: "Ubumuntu",
             description:
                 "We place kindness, empathy and respect for every learner at the center of everything we do. Every child is seen, valued and supported to grow with dignity.",
-            bg: "bg-app-purple/10",
         },
         {
             title: "Hands-on Impact",
             description:
                 "We believe real learning happens by doing — building, breaking, fixing and creating with our own hands. Every project leaves learners with tangible skills and visible results.",
-            bg: "bg-app-purple/10",
         },
         {
             title: "Inclusive Innovation",
             description:
                 "Technology and creativity belong to everyone — we remove barriers so that girls, boys, rural and urban youth, beginners and advanced learners all have equal access to innovate.",
-            bg: "bg-app-purple/10",
         },
         {
             title: "Joyful Discovery",
             description:
                 "Learning should spark excitement, curiosity and smiles — we design experiences where wonder and play drive deep engagement and lifelong love for STEM.",
-            bg: "bg-app-purple/10",
         },
         {
             title: "Community Connection",
             description:
                 "We grow stronger together — learners, mentors, parents, schools and volunteers form a supportive network that celebrates each success and lifts each other up.",
-            bg: "bg-app-purple/10",
         },
         {
             title: "Future Focused Empowerment",
             description:
                 "We equip young people not just with today’s tools, but with the mindset, confidence and vision to shape tomorrow’s technology, solve big problems and lead meaningful lives.",
-            bg: "bg-app-purple/10",
         },
     ];
 
@@ -58,7 +52,7 @@ const CoreValues = () => {
                     {values.map((value, index) => (
                         <div
                             key={index}
-                            className={`${value.bg} rounded-2xl p-8 md:p-10 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 text-center flex flex-col`}
+                            className="bg-app-purple/10 rounded-2xl p-8 md:p-10 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 text-center flex flex-col"
                         >
                             <h3 className="text-2xl md:text-3xl font-bold text-app-purple mb-4">
                                 {value.title}

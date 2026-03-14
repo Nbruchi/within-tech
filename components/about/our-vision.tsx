@@ -31,9 +31,9 @@ const OurVision = () => {
                         </div>
 
                         {/* Yellow block - Vision */}
-                        <div className="bg-amber-500 text-white rounded-2xl p-8 md:p-10 shadow-lg flex-1">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                VISION
+                        <div className="bg-app-yellow rounded-2xl p-8 md:p-10 shadow-lg flex-1">
+                            <h2 className="section-title mb-6">
+                                Our Vision
                             </h2>
                             <p className="text-base md:text-lg leading-relaxed">
                                 A future where every young person in Rwanda has the opportunity to learn technology and become a creator, innovator, and leader in the digital economy

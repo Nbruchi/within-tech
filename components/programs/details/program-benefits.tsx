@@ -31,6 +31,7 @@ const TestimonialCarousel = ({
             {testimonials.map((t, i) => (
                 <div
                     key={i}
+                    aria-hidden={i !== current}
                     className={`absolute inset-0 transition-opacity duration-1000 flex flex-col items-center justify-center text-center px-6 ${
                         i === current
                             ? "opacity-100"

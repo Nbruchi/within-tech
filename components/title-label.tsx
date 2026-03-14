@@ -11,7 +11,7 @@ const TitleLabel = ({
     return (
         <Item
             variant="outline"
-            className="flex w-fit items-center gap-2 rounded-full border-none bg-app-orange/10 px-2 py-1 my-4"
+            className={`flex w-fit items-center gap-2 rounded-full border-none ${color === "orange" ? "bg-app-orange/20" : "bg-white/10"} px-2 py-1 my-4`}
         >
             <ItemMedia variant="icon">
                 <VscSparkleFilled

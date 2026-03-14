@@ -88,9 +88,9 @@ function SuccessStories() {
 
                                         {/* Quote Badge - Top Right */}
                                         <div className="absolute top-6 right-6 w-10 h-10 flex items-center justify-center shadow-lg transform rotate-6">
-                                            <h2>
+                                            <span>
                                                 <FaQuoteRight />
-                                            </h2>
+                                            </span>
                                         </div>
 
                                         {/* Testimonial Content - Centered */}
