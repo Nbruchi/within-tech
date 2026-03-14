@@ -5,12 +5,10 @@ const OurVision = () => {
         <section className="relative py-16 md:py-24 bg-gray-50/30 overflow-hidden">
             <div className="container mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-
-                    {/* LEFT: Full image block */}
                     <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-4/3 lg:aspect-5/4 order-1 lg:order-1">
                         <Image
-                            src="/images/landing-pic-04.jpg"  // ← replace with the exact kids-at-laptop image from screenshot
-                            alt="Children learning coding on laptop"
+                            src="/images/landing-pic-04.jpg"
+                            alt="Vision image"
                             fill
                             className="object-cover"
                             priority

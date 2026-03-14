@@ -7,7 +7,14 @@ const TestimonialCarousel = ({ testimonials }: { testimonials: Program["testimon
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
-        if (testimonials.length <= 1) return;
+        if (testimonials.length === 0) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+                    setCurrent(0);
+                    return;
+                }
+                setCurrent((prev) => (prev < testimonials.length ? prev : 0));
+           if (testimonials.length <= 1) return;
+
         const timer = setInterval(() => {
             setCurrent((prev) => (prev + 1) % testimonials.length);
         }, 6000); // fade every 6s
@@ -27,7 +34,7 @@ const TestimonialCarousel = ({ testimonials }: { testimonials: Program["testimon
                     <p className="text-lg md:text-xl italic text-gray-800 mb-6 max-w-lg">{t.quote}</p>
                     <div className="flex items-center gap-4">
                         <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-pink-400">
-                            <Image src={t.photo} alt={t.name} width={56} height={56} className="object-cover" />
+                            <Image src={t.image} alt={t.name} width={56} height={56} className="object-cover" />
                         </div>
                         <div>
                             <p className="font-semibold text-gray-900">{t.name}</p>

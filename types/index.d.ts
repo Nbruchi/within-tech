@@ -1,3 +1,10 @@
+declare interface ProgramTestimonial {
+       quote: string;
+        name: string;
+        age: number | string;
+        image: string;
+}
+
 declare interface Program {
     id: string;
     title: string;
@@ -14,12 +21,7 @@ declare interface Program {
     location: string;
 
     benefitsText: string;
-    testimonials: Array<{
-        quote: string;
-        name: string;
-        age: number | string;
-        photo: string;
-    }>;
+    testimonials: ProgramTestimonial[];
 
     whatLearnIntro: string;
     learnCards: Array<{

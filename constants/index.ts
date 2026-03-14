@@ -69,8 +69,8 @@ export const programs: Program[] = [
 
         benefitsText: "Participants gain hands-on skills, teamwork experience, and excitement about tech careers — many return as mentors or club leaders in their schools.",
         testimonials: [
-            { quote: "I built my first game during camp — now I want to be a game developer!", name: "Aime", age: 20, photo: "/images/aime.jpg" },
-            { quote: "The robotics part was amazing. I never knew I could make something move by coding!", name: "Esther", age: 15, photo: "/images/esther.jpg" },
+            { quote: "I built my first game during camp — now I want to be a game developer!", name: "Aime", age: 20, image: "/images/aime.jpg" },
+            { quote: "The robotics part was amazing. I never knew I could make something move by coding!", name: "Esther", age: 15, image: "/images/esther.jpg" },
         ],
 
         whatLearnIntro: "Campers dive deep into multiple STEM areas through daily projects and challenges.",
@@ -85,7 +85,7 @@ export const programs: Program[] = [
         sampleImage: "/images/landing-pic-02.png",
 
         programIntroTitle: "UNLEASHING CREATIVITY THROUGH INTENSIVE TECH IMMERSION",
-        programIntroText: "Our summer camps turn school holidays into launchpads for innovation — kids collaborate, experiment, and build things they’re proud to show off.",
+        programIntroText: "Our summer camps turn school holidays into launchpads for innovation — learners collaborate, experiment, and build things they’re proud to show off.",
         programIntroImage: "/images/landing-pic-02.png",
 
         howItWorksText: "Intensive holiday program with daily hands-on sessions, expert facilitators, and group projects.",
@@ -110,8 +110,8 @@ export const programs: Program[] = [
 
         benefitsText: "Builds consistent skills, school community, and long-term interest in STEM through fun weekly meetups.",
         testimonials: [
-            { quote: "Club day is my favorite — we always build something cool together!", name: "Gabriella", age: 16, photo: "/images/gabriella.jpg" },
-            { quote: "Club day fascinates me — we came up with new ideas and we try to build them from scratch", name: "Sharif", age: 20, photo: "/images/sharif.jpg" },
+            { quote: "Club day is my favorite — we always build something cool together!", name: "Gabriella", age: 16, image: "/images/gabriella.jpg" },
+            { quote: "Club day fascinates me — we came up with new ideas and we try to build them from scratch", name: "Sharif", age: 20, image: "/images/sharif.jpg" },
         ],
 
         whatLearnIntro: "Weekly sessions focus on progressive skill-building in coding and robotics.",
@@ -152,8 +152,7 @@ export const programs: Program[] = [
 
         benefitsText: "Girls leave with more than technical know-how—they gain confidence, a sense of belonging in STEM spaces, and a supportive network of peers and mentors. These outcomes open doors to further learning and help them envision a future in technology, science, or engineering.",
         testimonials: [
-            { quote: "Before Code With Kids, I had never touched a computer. Now I’ve built a robot that follows my voice!", name: "Nancy", age: 18, photo: "/images/nancy.jpg" },
-            // Add 1–2 more if you have real ones
+            { quote: "Before WithinTech, I had never touched a computer. Now I’ve built a robot that follows my voice!", name: "Nancy", age: 18, image: "/images/nancy.jpg" },
         ],
 
         whatLearnIntro: "Through hands-on projects, participants learn the fundamentals of coding using beginner-friendly tools like Scratch and Python, experiment with robotics and simple electronics, and apply design thinking to solve real-world problems. Along the way, they practice collaboration and communication, presenting their ideas to peers and mentors to build confidence.",
@@ -175,7 +174,7 @@ export const programs: Program[] = [
         programIntroText: "Girls belong in STEM - in the classroom, the lab, and the workplace. Our Girls in STEM program is designed to provide a safe, supportive space where girls can explore coding, robotics, and scientific discovery. With the guidance of inspiring mentors and role models, participants gain skills, confidence, and the belief that they can achieve anything.",
         programIntroImage: "/images/landing-pic-04.jpg",
 
-        howItWorksText: "The program runs as weekly after-school sessions, supplemented by monthly talks from women in STEM who share their journeys. Term-based enrollment supports steady progress, while our sponsorships and scholarships ensure access for learners who need it. Sessions are hosted at our Code With Kids makerspace in Kigali and at partner schools.",
+        howItWorksText: "The program runs as weekly after-school sessions, supplemented by monthly talks from women in STEM who share their journeys. Term-based enrollment supports steady progress, while our sponsorships and scholarships ensure access for learners who need it. Sessions are hosted at our WithinTech makerspace in Kigali and at partner schools.",
         schedule: "1–2 sessions per week (by school term)",
         showcase: "Mini demos where girls present projects to peers and parents",
         support: "Laptops, kits, and materials provided",
@@ -197,7 +196,7 @@ export const programs: Program[] = [
 
         benefitsText: "Inspires fascination with space while building engineering and scientific thinking skills applicable to many careers.",
         testimonials: [
-            { quote: "I designed a mini satellite model — space feels real now!", name: "Liam", age: 19, photo: "/images/aime.jpg" },
+            { quote: "I designed a mini satellite model — space feels real now!", name: "Liam", age: 19, image: "/images/aime.jpg" },
         ],
 
         whatLearnIntro: "Explore space-themed STEM through building, coding, and real science experiments.",
@@ -237,7 +236,7 @@ export const programs: Program[] = [
 
         benefitsText: "Builds AI literacy, presentation skills, and competitive spirit — great for portfolios.",
         testimonials: [
-            { quote: "My AI chatbot won second place — I learned so much!", name: "Mark", age: 20, photo: "/images/tss-02.jpg" },
+            { quote: "My AI chatbot won second place — I learned so much!", name: "Mark", age: 20, image: "/images/tss-02.jpg" },
         ],
 
         whatLearnIntro: "Introduction to AI concepts through building and competing.",
@@ -277,7 +276,7 @@ export const programs: Program[] = [
 
         benefitsText: "Develop teaching, project management, and tech skills while making a real community impact.",
         testimonials: [
-            { quote: "Mentoring kids taught me more about leadership than any lecture.", name: "Michael", age: 14, photo: "/images/ruhengeri-03.jpg" },
+            { quote: "Mentoring learners taught me more about leadership than any lecture.", name: "Michael", age: 19, image: "/images/ruhengeri-03.jpg" },
         ],
 
         whatLearnIntro: "Interns learn facilitation, advanced tech, and community engagement.",
@@ -292,7 +291,7 @@ export const programs: Program[] = [
         sampleImage: "/images/landing-pic-05.jpg",
 
         programIntroTitle: "GROW WHILE GIVING BACK",
-        programIntroText: "Our internship bridges university learning with real-world impact — interns mentor kids and build their own portfolios.",
+        programIntroText: "Our internship bridges university learning with real-world impact — interns mentor learners and build their own portfolios.",
         programIntroImage: "/images/landing-pic-05.jpg",
 
         howItWorksText: "Structured mentorship with training, project work, and reflection.",

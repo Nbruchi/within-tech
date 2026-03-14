@@ -5,7 +5,7 @@ const BootcampActivities = () => {
         {
             title: "CODING",
             description:
-                "From Scratch to Python, kids build apps, games, and websites they love while learning real programming concepts.",
+                "From Scratch to Python, learners build apps, games, and websites they love while learning real programming concepts.",
             bgColor: "bg-pink-50",
             buttonColor: "bg-pink-600 hover:bg-pink-700",
             exploreText: "Explore Coding",
@@ -21,7 +21,7 @@ const BootcampActivities = () => {
         {
             title: "3D DESIGN",
             description:
-                "Creative thinking comes to life with design and prototyping — kids model, print, and test their own inventions.",
+                "Creative thinking comes to life with design and prototyping — learners model, print, and test their own inventions.",
             bgColor: "bg-teal-50",
             buttonColor: "bg-teal-600 hover:bg-teal-700",
             exploreText: "Explore 3D Design",
@@ -37,7 +37,7 @@ const BootcampActivities = () => {
                         OUR STEM BOOTCAMP ACTIVITIES
                     </h2>
                     <p className="mt-6 text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                        At Code With Kids, we turn curiosity into creativity. From building robots to designing games and coding apps,
+                        At WithinTech, we turn curiosity into creativity. From building robots to designing games and coding apps,
                         our programs are hands-on, exciting, and designed to inspire future innovators.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const BootcampActivities = () => {
                             </p>
                             <div className="mt-auto">
                                 <Button
-                                    className={`${activity.buttonColor}text-white px-8 py-6 rounded-none text-lg shadow-md hover:shadow-lg transition-all duration-300`}
+                                    className={`${activity.buttonColor} text-white px-8 py-6 rounded-none text-lg shadow-md hover:shadow-lg transition-all duration-300`}
                                 >
                                     {activity.exploreText}
                                 </Button>

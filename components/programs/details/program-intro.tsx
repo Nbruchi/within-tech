@@ -5,15 +5,11 @@ const ProgramIntro = ({program}: { program:Program }) => {
         <section className="py-16 md:py-24 bg-blue-950 text-white">
             <div className="container px-4 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    {program.badge ? (
+
                         <span className="inline-block bg-teal-500 text-white px-5 py-2 rounded-none text-sm font-semibold mb-6">
-                {program.badge}
+                {program.badge ?? program?.title}
               </span>
-                    ): (
-                        <span className="inline-block bg-teal-500 text-white px-5 py-2 rounded-none text-sm font-semibold mb-6">
-                {program.title}
-              </span>
-                    )}
+
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">{program.programIntroTitle}</h2>
                     <p className="text-lg md:text-xl leading-relaxed opacity-90">{program.programIntroText}</p>
                 </div>
