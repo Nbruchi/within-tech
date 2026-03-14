@@ -41,8 +41,8 @@ const WhoWeAre = () => {
                 <p className="mt-4 text-lg">
                     WithinTech Rwanda is a leading EdTech organization dedicated
                     to bridging the digital skills gap in Rwanda. We empower
-                    young people with hands-on coding, robotics, and tech
-                    programs in the digital world.
+                    young people with hands-on coding, robotics, and tech programs
+                    that prepare them for the digital world
                 </p>
 
                 {/*TODO: Implement vision, mission, and values here*/}

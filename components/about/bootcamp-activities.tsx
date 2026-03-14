@@ -72,7 +72,7 @@ const BootcampActivities = () => {
                 </div>
 
                 <div className="text-center mt-12 md:mt-16">
-                    <Button className="bg-app-purple hover:bg-app-purple-dark text-white font-semibold px-8 py-6 rounded-none text-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <Button className="bg-app-purple hover:bg-app-purple/80 text-white font-semibold px-8 py-6 rounded-none text-lg shadow-md hover:shadow-lg transition-all duration-300">
                         View All Activities
                     </Button>
                 </div>
