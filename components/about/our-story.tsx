@@ -1,39 +1,57 @@
-import {Item, ItemContent, ItemMedia, ItemTitle} from "@/components/ui/item";
-import {VscSparkleFilled} from "react-icons/vsc";
+import Image from "next/image";
 
 const OurStory = () => {
     return (
-        <section id="our-story" className="flex flex-col items-center justify-center gap-y-6 px-4 py-12 lg:px-6 bg-[url('/images/')]">
-            <Item variant="outline" className="rounded-full flex items-center gap-2 bg-app-orange/10 px-4 py-2 w-fit">
-                <ItemMedia variant="icon">
-                    <VscSparkleFilled className="size-3 fill-app-orange"/>
-                </ItemMedia>
-                <ItemContent>
-                    <ItemTitle className="text-app-orange">Our Story</ItemTitle>
-                </ItemContent>
-            </Item>
-            <h2 className="section-title text-app-purple">Our Story</h2>
-           <div className="flex flex-col items-start">
-               <p className="text-lg">
-                   Many people believe coding is difficult or that it is only meant for adults or professional engineers
-               </p>
-               <p className="indent-2 mt-2">
-                   At WithinTech Rwanda, we believe the opposite.
-               </p>
-               <p>
-                   Technology belongs to everyone — especially young people.
-               </p>
-               <p>
-                   Our journey began with a simple idea: <span className="text-app-orange">young learners are capable of building incredible things when given the right tools and mentorship.</span>
-               </p>
-               <p>
-                   That is why we introduce technology education early, starting with learners as young as <span className="text-app-orange">8 years old</span> and supporting them all the way to <span className="text-app-orange">university-level innovation and mentorship opportunities.</span>
-               </p>
-               <p>
-                   Through our programs, young people learn to design websites, build robots, explore artificial intelligence, and even experiment with space technology concepts.
-               </p>
-           </div>
+        <section className="py-16 md:py-24 bg-white">
+            <div className="container mx-auto px-10 sm:px-6 lg:px-20">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+
+                    {/* LEFT: TEXT – unchanged */}
+                    <div className="lg:col-span-7 space-y-6">
+                        <div>
+                            <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a8a] tracking-tight">
+                                OUR STORY
+                            </h2>
+                        </div>
+
+                        <div className="text-2xl md:text-3xl font-medium text-gray-800 leading-tight">
+                            Many people believe coding is difficult or that it is only meant for adults or professional engineers.
+                        </div>
+
+                        <div className="text-[17px] md:text-lg text-gray-700 leading-relaxed max-w-prose">
+                          <span className="font-semibold"> At WithinTech Rwanda, we believe the opposite.</span>
+                            Technology belongs to everyone — especially young people. Our journey began with a simple idea: young learners are capable of building incredible things when given the right tools and mentorship. That is why we introduce technology education early, starting with learners as young as 8 years old and supporting them all the way to university-level innovation and mentorship opportunities.
+                            Through our programs, young people learn to design websites, build robots, explore artificial intelligence, and even experiment with space technology concepts. WithinTech Rwanda exists to ensure that young people do not just use technology — they build the future with it.
+                        </div>
+                    </div>
+
+                    {/* RIGHT: OVERLAPPING STACK – new version */}
+                    <div className="lg:col-span-5 relative min-h-125 lg:min-h-155">
+                        {/* Bottom image */}
+                        <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-4/3 lg:aspect-5/4 z-10">
+                            <Image
+                                src="/images/landing-pic-02.png"
+                                alt="Young innovator with robotics project"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+
+                        {/* Top overlapping image – shifted right & up */}
+                        <div className="absolute top-[18%] lg:top-[22%] right-[-6%] lg:right-[-10%] w-[82%] lg:w-[78%] aspect-4/3 lg:aspect-5/4 rounded-3xl overflow-hidden shadow-2xl z-20">
+                            <Image
+                                src="/images/landing-pic-04.jpg"
+                                alt="Children learning on a laptop in Kibera"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    )
-}
-export default OurStory
+    );
+};
+
+export default OurStory;
