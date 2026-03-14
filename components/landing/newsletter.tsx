@@ -1,22 +1,10 @@
-import React from 'react'
-import {Item, ItemContent, ItemMedia, ItemTitle} from "@/components/ui/item";
 import {Button} from "@/components/ui/button";
-import {VscSparkleFilled} from "react-icons/vsc";
+import TitleLabel from '../title-label';
 
 const Newsletter = () => {
     return (
         <section id="newsletter" className="flex flex-col items-center justify-center gap-y-6 px-4 py-12 lg:px-6">
-            <Item
-                variant="outline"
-                className="flex w-fit items-center gap-2 rounded-full border-none bg-app-orange/10 px-2 py-1"
-            >
-                <ItemMedia variant="icon">
-                    <VscSparkleFilled className="size-4 fill-app-orange"/>
-                </ItemMedia>
-                <ItemContent>
-                    <ItemTitle className="text-lg text-app-orange">Newsletter</ItemTitle>
-                </ItemContent>
-            </Item>
+           <TitleLabel label='Newsletter'/>
             <h2 className="section-title text-app-purple">Subscribe to Our Newsletter</h2>
             <p className="text-center">Stay connected with our programs, events, and student success stories.</p>
             <div className="py-1 px-2 rounded-sm relative flex items-center gap-2 justify-between border-2 border-app-purple w-1/2">
