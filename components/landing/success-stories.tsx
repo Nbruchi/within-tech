@@ -1,17 +1,15 @@
-"use client"
+"use client";
 
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination, Navigation, Autoplay} from 'swiper/modules';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import {VscSparkleFilled} from "react-icons/vsc";
-import {FaQuoteRight} from "react-icons/fa";
-import {testimonials} from "@/constants";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { FaQuoteRight } from "react-icons/fa";
+import { testimonials } from "@/constants";
 import Image from "next/image";
-import {Item, ItemContent, ItemMedia, ItemTitle} from "@/components/ui/item";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import TitleLabel from "../title-label";
 
 function SuccessStories() {
     return (
@@ -19,22 +17,13 @@ function SuccessStories() {
             <div className="container mx-auto px-6 lg:px-8">
                 {/* Header Section - Centered */}
                 <div className="flex flex-col items-center text-center mb-12 gap-y-6">
-                    <Item
-                        variant="outline"
-                        className="mt-10 flex w-fit items-center gap-2 rounded-full border-none bg-app-orange/10 px-2 py-1"
-                    >
-                        <ItemMedia variant="icon">
-                            <VscSparkleFilled className="size-4 fill-app-orange"/>
-                        </ItemMedia>
-                        <ItemContent>
-                            <ItemTitle className="text-lg text-app-orange">Succes Stories</ItemTitle>
-                        </ItemContent>
-                    </Item>
+                    <TitleLabel label="Success Stories" />
                     <h2 className="section-title text-app-purple">
                         Success Stories
                     </h2>
                     <p className="leading-relaxed font-normal text-[18px]">
-                        Hear directly from students, mentors, and partners about the impact of WithinTech Rwanda.
+                        Hear directly from students, mentors, and partners about
+                        the impact of WithinTech Rwanda.
                     </p>
                 </div>
 
@@ -54,8 +43,10 @@ function SuccessStories() {
                         navigation={true}
                         pagination={{
                             clickable: true,
-                            bulletClass: 'swiper-pagination-bullet testimonial-bullet',
-                            bulletActiveClass: 'swiper-pagination-bullet-active testimonial-bullet-active',
+                            bulletClass:
+                                "swiper-pagination-bullet testimonial-bullet",
+                            bulletActiveClass:
+                                "swiper-pagination-bullet-active testimonial-bullet-active",
                         }}
                         breakpoints={{
                             768: {
@@ -71,7 +62,9 @@ function SuccessStories() {
                                 {({ isActive }) => (
                                     <div
                                         className={`bg-white light-background rounded-3xl shadow-xl p-8 sm:p-10 overflow-hidden h-full relative transition-all duration-300 ${
-                                            isActive ? 'md:scale-110' : 'md:scale-90 md:opacity-70'
+                                            isActive
+                                                ? "md:scale-110"
+                                                : "md:scale-90 md:opacity-70"
                                         }`}
                                     >
                                         {/* Building block decorations - top left */}
@@ -95,7 +88,9 @@ function SuccessStories() {
 
                                         {/* Quote Badge - Top Right */}
                                         <div className="absolute top-6 right-6 w-10 h-10 flex items-center justify-center shadow-lg transform rotate-6">
-                                            <h2><FaQuoteRight /></h2>
+                                            <h2>
+                                                <FaQuoteRight />
+                                            </h2>
                                         </div>
 
                                         {/* Testimonial Content - Centered */}
@@ -124,8 +119,16 @@ function SuccessStories() {
 
                                             {/* Name */}
                                             <div>
-                                                <h2 className={"font-black text-[24px]"}>{testimonial.name}</h2>
-                                                <h3 className="font-medium">WiT Mentee</h3>
+                                                <h2
+                                                    className={
+                                                        "font-black text-[24px]"
+                                                    }
+                                                >
+                                                    {testimonial.name}
+                                                </h2>
+                                                <h3 className="font-medium">
+                                                    WiT Mentee
+                                                </h3>
                                             </div>
                                         </div>
                                     </div>
@@ -137,10 +140,14 @@ function SuccessStories() {
             </div>
 
             {/* Decorative dots pattern */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 opacity-20" style={{
-                backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-                backgroundSize: '20px 20px'
-            }}></div>
+            <div
+                className="absolute bottom-0 left-0 right-0 h-32 opacity-20"
+                style={{
+                    backgroundImage:
+                        "radial-gradient(circle, white 1px, transparent 1px)",
+                    backgroundSize: "20px 20px",
+                }}
+            ></div>
         </div>
     );
 }

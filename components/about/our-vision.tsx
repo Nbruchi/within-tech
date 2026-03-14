@@ -21,9 +21,9 @@ const OurVision = () => {
                     <div className="flex flex-col gap-6 order-2 lg:order-2">
 
                         {/* Pink block - Our Story / Mission */}
-                        <div className="bg-rose-600 text-white rounded-2xl p-8 md:p-10 shadow-lg flex-1">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                OUR MISSION
+                        <div className="bg-app-yellow rounded-2xl p-8 md:p-10 shadow-lg flex-1">
+                            <h2 className="section-title mb-6">
+                                Our Mission
                             </h2>
                             <p className="text-base md:text-lg leading-relaxed">
                                 To empower young people with digital skills, creativity, and innovation mindset through accessible technology education.
