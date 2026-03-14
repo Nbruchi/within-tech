@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import {useState} from 'react'
+import { useState } from "react";
 import Image from "next/image";
-import {Item, ItemContent, ItemMedia, ItemTitle} from "@/components/ui/item";
-import {programs} from "@/constants";
-import {Autoplay} from "swiper/modules";
-import {Swiper, SwiperSlide} from "swiper/react";
-import "swiper/css";
-import {VscSparkleFilled} from "react-icons/vsc";
+import { programs } from "@/constants";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
+import TitleLabel from "../title-label";
+
+import "swiper/css";
 
 const Programs = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -18,23 +18,15 @@ const Programs = () => {
             id="programs"
             className="overflow-x-hidden flex flex-col items-center justify-center gap-y-6 px-4 py-12 lg:px-6"
         >
-            <Item
-                variant="outline"
-                className="mt-10 flex w-fit items-center gap-2 rounded-full border-none bg-app-orange/10 px-2 py-1"
-            >
-                <ItemMedia variant="icon">
-                    <VscSparkleFilled className="size-4 fill-app-orange"/>
-                </ItemMedia>
-                <ItemContent>
-                    <ItemTitle className="text-lg text-app-orange">Our Programs</ItemTitle>
-                </ItemContent>
-            </Item>
+            <TitleLabel label="Programs" />
 
-            <h2 className="section-title text-app-purple">Building Skills. Unlocking Futures.</h2>
+            <h2 className="section-title text-app-purple">
+                Building Skills. Unlocking Futures.
+            </h2>
 
             <p className="max-w-3xl text-center text-xl">
-                WithinTech Rwanda runs programs that empower students through coding, robotics, AI competitions,
-                and mentorship.
+                WithinTech Rwanda runs programs that empower students through
+                coding, robotics, AI competitions, and mentorship.
             </p>
 
             <div className="mt-6 w-full max-w-7xl overflow-auto">
@@ -72,13 +64,16 @@ const Programs = () => {
                         const isActive = activeIndex === index;
 
                         return (
-                            <SwiperSlide key={program.id} className="px-2 pb-8 pt-4">
+                            <SwiperSlide
+                                key={program.id}
+                                className="px-2 pb-8 pt-4"
+                            >
                                 <article
                                     className={[
                                         "group relative mx-auto h-125 w-full max-w-sm overflow-hidden rounded-2xl transition-all duration-500",
                                         isActive
                                             ? "translate-y-6 scale-105 shadow-[0_24px_60px_rgba(54,33,89,0.18)]"
-                                            : "translate-y-0 scale-[0.94] shadow-[0_18px_40px_rgba(54,33,89,0.12)]"
+                                            : "translate-y-0 scale-[0.94] shadow-[0_18px_40px_rgba(54,33,89,0.12)]",
                                     ].join(" ")}
                                 >
                                     <Image
@@ -94,7 +89,7 @@ const Programs = () => {
                                             "absolute inset-0 transition-all duration-500",
                                             isActive
                                                 ? "bg-linear-to-t from-black/75 via-black/20 to-black/10"
-                                                : "bg-linear-to-t from-black/85 via-black/45 to-black/35"
+                                                : "bg-linear-to-t from-black/85 via-black/45 to-black/35",
                                         ].join(" ")}
                                     />
 
@@ -111,7 +106,9 @@ const Programs = () => {
                                             className={[
                                                 "mt-3 overflow-hidden text-sm leading-6 text-white/90 transition-all duration-300",
                                                 "md:max-h-0 md:-translate-y-2 md:opacity-0 md:group-hover:max-h-32 md:group-hover:translate-y-0 md:group-hover:opacity-100",
-                                                isActive ? "max-h-32 translate-y-0 opacity-100" : "max-h-0 -translate-y-2 opacity-0 md:max-h-0"
+                                                isActive
+                                                    ? "max-h-32 translate-y-0 opacity-100"
+                                                    : "max-h-0 -translate-y-2 opacity-0 md:max-h-0",
                                             ].join(" ")}
                                         >
                                             {program.description}
@@ -123,9 +120,14 @@ const Programs = () => {
                     })}
                 </Swiper>
             </div>
-            <Link href="/programs" className="bg-app-orange hover:bg-app-orange/90 text-white rounded-none px-6 py-4 mt-4">Explore Programs</Link>
+            <Link
+                href="/programs"
+                className="bg-app-orange hover:bg-app-orange/90 text-white rounded-none px-6 py-4 mt-4"
+            >
+                Explore Programs
+            </Link>
         </section>
-    )
-}
+    );
+};
 
 export default Programs;
